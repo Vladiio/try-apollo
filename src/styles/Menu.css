@@ -1,0 +1,13 @@
+.Menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu__link {
+  margin: 0 10px;
+}
+
+.Menu__link--active {
+  font-weight: bold;
+}
