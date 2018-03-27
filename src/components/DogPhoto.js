@@ -1,7 +1,7 @@
 import React from "react";
 import { Query } from "react-apollo";
 
-import { GET_DOGS } from "../queries";
+import { GET_DOG_PHOTO } from "../queries";
 
 const DogPhoto = ({ error, loading, data }) => {
   if (error) return <p>{error}</p>;
@@ -15,5 +15,5 @@ const DogPhoto = ({ error, loading, data }) => {
 };
 
 export default ({ breed }) => (
-  <Query children={DogPhoto} query={GET_DOGS} variables={{ breed }} />
+  <Query children={DogPhoto} query={GET_DOG_PHOTO} variables={{ breed }} />
 );

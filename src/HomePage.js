@@ -9,7 +9,6 @@ class HomePage extends Component {
   };
 
   onSelectBreed = selectedBreed => {
-    console.log(selectedBreed);
     this.setState({ selectedBreed });
   };
 
